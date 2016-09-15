@@ -27,4 +27,6 @@ ${DT}/dtcollector -instance ${NAME} \
                   -server ${SERVER} \
                   -group ${GROUP_NAME} \
                   -Xms${JVM_XMS} \
-                  -Xmx${JVM_XMX} 
+                  -Xmx${JVM_XMX} \
+                  -XX:PermSize=${JVM_PERM_SIZE} \
+                  -XX:MaxPermSize=${JVM_MAX_PERM_SIZE}
