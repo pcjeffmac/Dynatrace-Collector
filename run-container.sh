@@ -26,9 +26,7 @@ docker run \
   --env DT_COLLECTOR_SERVER="${SERVER}" \
   --env DT_COLLECTOR_JVM_XMS="${JVM_XMS}" \
   --env DT_COLLECTOR_JVM_XMX="${JVM_XMX}" \
-  --env DT_COLLECTOR_JVM_PERM_SIZE="${JVM_PERM_SIZE}" \
-  --env DT_COLLECTOR_JVM_MAX_PERM_SIZE="${JVM_MAX_PERM_SIZE}" \
   --env HOST_NAME="${HOST_NAME}" \
   --volume ${HOST_LOG_DIR}:/dynatrace/log/collector/${NAME} \
   --publish-all \
-  dynatrace/collector:6.5
+  pcjeffmac/dynatrace-collector

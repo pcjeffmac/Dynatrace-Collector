@@ -4,8 +4,8 @@ GROUP_NAME=${DT_COLLECTOR_GROUP_NAME}
 
 JVM_XMS=${DT_COLLECTOR_JVM_XMS:-"2G"}
 JVM_XMX=${DT_COLLECTOR_JVM_XMX:-"2G"}
-JVM_PERM_SIZE=${DT_COLLECTOR_JVM_PERM_SIZE:-"128m"}
-JVM_MAX_PERM_SIZE=${DT_COLLECTOR_JVM_MAX_PERM_SIZE:-"128m"}
+#JVM_PERM_SIZE=${DT_COLLECTOR_JVM_PERM_SIZE:-"128m"}
+#JVM_MAX_PERM_SIZE=${DT_COLLECTOR_JVM_MAX_PERM_SIZE:-"128m"}
 
 # We attempt to auto-discover the Dynatrace Server through the environment
 # when the container has been --linked to a 'dynatrace/server' container
@@ -27,6 +27,4 @@ ${DT}/dtcollector -instance ${NAME} \
                   -server ${SERVER} \
                   -group ${GROUP_NAME} \
                   -Xms${JVM_XMS} \
-                  -Xmx${JVM_XMX} \
-                  -XX:PermSize=${JVM_PERM_SIZE} \
-                  -XX:MaxPermSize=${JVM_MAX_PERM_SIZE}
+                  -Xmx${JVM_XMX} 
