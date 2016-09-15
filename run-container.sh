@@ -31,4 +31,4 @@ docker run \
   --env HOST_NAME="${HOST_NAME}" \
   --volume ${HOST_LOG_DIR}:/dynatrace/log/collector/${NAME} \
   --publish-all \
-  pcjeffmac/dynatrace-collector
+  pcjeffmac/dynatrace-collector:6.5
