@@ -3,7 +3,7 @@ FROM debian:wheezy
 MAINTAINER Martin Etmajer <martin.etmajer@dynatrace.com>
 
 ENV VERSION             "6.5"
-ENV INSTALLER_FILE_NAME "dynatrace-collector-6.5.0.1287-linux-x86.jar"
+ENV INSTALLER_FILE_NAME "dynatrace-collector-6.5.0.1289-linux-x86.jar"
 ENV INSTALLER_URL       "https://dl.dropboxusercontent.com/u/61124235/dt6.5/${INSTALLER_FILE_NAME}"
 
 ENV DT                  "/dynatrace"
